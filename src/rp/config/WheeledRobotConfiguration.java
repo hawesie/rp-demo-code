@@ -2,12 +2,12 @@ package rp.config;
 
 import lejos.robotics.RegulatedMotor;
 
-
 /**
- * A class to store configuration information for a wheeled robot.
+ * A class to store configuration information for a wheeled robot. You could
+ * subclass this to also contain information about sensor ports.
  * 
- * @author nah
- *
+ * @author Nick
+ * 
  */
 public class WheeledRobotConfiguration {
 
@@ -48,5 +48,4 @@ public class WheeledRobotConfiguration {
 		m_rightWheel = _rightWheel;
 	}
 
-	
 }

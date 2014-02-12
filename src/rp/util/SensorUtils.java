@@ -2,6 +2,13 @@ package rp.util;
 
 import java.util.Hashtable;
 
+/**
+ * 
+ * Utility functions to make using certain sensors easier.
+ * 
+ * @author Nick Hawes
+ *
+ */
 public abstract class SensorUtils {
 
 	public static final Hashtable<Integer, String> COLOUR_NAMES;

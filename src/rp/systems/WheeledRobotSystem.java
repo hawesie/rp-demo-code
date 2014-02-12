@@ -4,7 +4,15 @@ import lejos.robotics.RegulatedMotor;
 import lejos.robotics.navigation.DifferentialPilot;
 import rp.config.WheeledRobotConfiguration;
 
-public class WheeledRobotSystem  {
+/**
+ * 
+ * A class to provide methods to control a wheeled robot system. Also provides
+ * access to the underlying configuration for convenience.
+ * 
+ * @author Nick Hawes
+ * 
+ */
+public class WheeledRobotSystem {
 
 	private final WheeledRobotConfiguration m_config;
 	private DifferentialPilot m_differentialPilot;
@@ -13,6 +21,12 @@ public class WheeledRobotSystem  {
 		m_config = _config;
 	}
 
+	/**
+	 * Get the DifferentialPilot for this robot. This creates a singleton
+	 * object, so subsequent calls to this method return the same object.
+	 * 
+	 * @return
+	 */
 	public DifferentialPilot getPilot() {
 		if (m_differentialPilot == null) {
 			m_differentialPilot = new DifferentialPilot(
@@ -41,5 +55,5 @@ public class WheeledRobotSystem  {
 	public double getRobotLength() {
 		return m_config.getRobotLength();
 	}
-	
+
 }
