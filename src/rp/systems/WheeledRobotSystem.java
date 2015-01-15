@@ -36,24 +36,12 @@ public class WheeledRobotSystem {
 		return m_differentialPilot;
 	}
 
-	public double getWheelDiameter() {
-		return m_config.getWheelDiameter();
-	}
-
-	public double getTrackWidth() {
-		return m_config.getTrackWidth();
-	}
-
-	public RegulatedMotor getLeftWheel() {
-		return m_config.getLeftWheel();
-	}
-
-	public RegulatedMotor getRightWheel() {
-		return m_config.getRightWheel();
-	}
-
-	public double getRobotLength() {
-		return m_config.getRobotLength();
+	/*
+	 * Get configuration information for this robot.
+	 * @return
+	 */
+	public WheeledRobotConfiguration getConfig() {
+		return m_config;
 	}
 
 }
