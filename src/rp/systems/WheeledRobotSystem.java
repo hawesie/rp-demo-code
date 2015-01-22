@@ -1,6 +1,5 @@
 package rp.systems;
 
-import lejos.robotics.RegulatedMotor;
 import lejos.robotics.navigation.DifferentialPilot;
 import rp.config.WheeledRobotConfiguration;
 
