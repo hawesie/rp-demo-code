@@ -15,7 +15,7 @@ import lejos.nxt.comm.RConsole;
  * @author Nick Hawes
  * 
  */
-public abstract class RobotProgrammingDemo implements Runnable {
+public abstract class RobotProgrammingDemo implements StoppableRunnable {
 
 	protected boolean m_run = true;
 
@@ -32,6 +32,10 @@ public abstract class RobotProgrammingDemo implements Runnable {
 
 			}
 		});
+	}
+
+	public void stop() {
+		m_run = false;
 	}
 
 	/**
