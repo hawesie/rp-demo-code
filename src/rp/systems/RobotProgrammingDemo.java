@@ -24,7 +24,7 @@ public abstract class RobotProgrammingDemo implements StoppableRunnable {
 
 			@Override
 			public void buttonReleased(Button _b) {
-				m_run = false;
+				stop();
 			}
 
 			@Override
